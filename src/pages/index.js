@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
             className="w-full lg:w-1/2 h-auto"
           />
           <div>
-            <h1 className="text-4xl">CLAIM YOUR MERCH</h1>
+            <h1 className="text-4xl">Tierarztpraxis</h1>
             <p className="mt-2 text-lg font-normal">
               Contribute to Medusa and receive free merch
               <br />
