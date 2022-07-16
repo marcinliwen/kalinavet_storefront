@@ -99,7 +99,7 @@ const MobileMenu = ({ open, setOpen }) => {
               </div>
             </div>
 
-            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+           {/*  <div className="border-t border-gray-200 py-6 px-4 space-y-6">
               {pages.map(page => (
                 <div key={page.name} className="flow-root">
                   <Link
@@ -112,7 +112,7 @@ const MobileMenu = ({ open, setOpen }) => {
                 </div>
               ))}
             </div>
-
+ */}
             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
               {customer ? (
                 <Fragment>
@@ -158,7 +158,12 @@ const MobileMenu = ({ open, setOpen }) => {
                 </Fragment>
               )}
             </div>
-
+            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+            <Link to="/kontakt" className="flex items-center  font-medium text-gray-700 hover:text-gray-600">Kontakt</Link>
+            </div>
+            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+            <a className="btn-ui btn-second font-medium text-gray-700 hover:text-gray-600" href="tel:48506109445" target="_blank">+48 506 109 445</a>
+                </div>
             <div
               className={classNames(
                 disabled ? "hidden" : "border-t border-gray-200 py-6 px-4"
@@ -191,6 +196,7 @@ const MobileMenu = ({ open, setOpen }) => {
                 })}
               </select>
             </div>
+            
           </div>
         </Transition.Child>
       </Dialog>
