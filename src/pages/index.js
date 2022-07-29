@@ -152,7 +152,7 @@ const IndexPage = ({ data }) => {
           </div>
 
           <h2 className="text-3xl">Online Shop</h2>
-          <p><b>Medikamente</b> nur für Praxispatienten</p>
+          {/* <p><b>Medikamente</b> nur für Praxispatienten</p> */}
           <p><b>Haustierprodukte</b></p>
           <p><b>Zahlung</b> per Karte oder Nachnahme</p>
           <p><b>Abholung</b> in der Praxis oder Apotheke</p>

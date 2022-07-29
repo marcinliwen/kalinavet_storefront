@@ -84,6 +84,7 @@ const mockData = {
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  
   return (
     <div className="sticky top-0 z-20">
       <header className="relative bg-white">
@@ -119,8 +120,8 @@ const Header = () => {
 
             <div className="hidden lg:flex lg:items-center">
               <div className="hidden flex-grow items-center justify-center lg:flex text-sm font-medium">
-                <HeaderLink to="/products" text="Products" />
-                <HeaderLink to="/collections" text="Collections" />
+                <HeaderLink to="/products" text="Haustierproducte" />
+                <HeaderLink to="/collections" text="Kategorie" />
               </div>
             </div>
           </div>
