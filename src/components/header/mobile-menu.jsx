@@ -79,7 +79,7 @@ const MobileMenu = ({ open, setOpen }) => {
             </div>
 
             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-              <div className="flow-root">
+              {/* <div className="flow-root">
                 <Link
                   to={"/products"}
                   className="-m-2 p-2 block font-medium text-gray-900"
@@ -96,10 +96,31 @@ const MobileMenu = ({ open, setOpen }) => {
                 >
                   Collections
                 </Link>
-              </div>
+              </div> */}
+              <Link
+                to={"/leistungen"}
+                className="-m-2 p-2 block font-medium text-gray-900"
+                onClick={() => setOpen(false)}
+              >
+                Leistungen
+              </Link>
+              <Link
+                to={""}
+                className="-m-2 p-2 block font-medium text-gray-900"
+                onClick={() => setOpen(false)}
+              >
+                Uber Uns
+              </Link>
+              <Link
+                to={""}
+                className="-m-2 p-2 block font-medium text-gray-900"
+                onClick={() => setOpen(false)}
+              >
+                Blog
+              </Link>
             </div>
 
-           {/*  <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+            {/*  <div className="border-t border-gray-200 py-6 px-4 space-y-6">
               {pages.map(page => (
                 <div key={page.name} className="flow-root">
                   <Link
@@ -113,7 +134,7 @@ const MobileMenu = ({ open, setOpen }) => {
               ))}
             </div>
  */}
-            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+            {/* <div className="border-t border-gray-200 py-6 px-4 space-y-6">
               {customer ? (
                 <Fragment>
                   <div className="flow-root">
@@ -157,14 +178,26 @@ const MobileMenu = ({ open, setOpen }) => {
                   </div>
                 </Fragment>
               )}
-            </div>
+            </div> */}
             <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-            <Link to="/kontakt" className="flex items-center  font-medium text-gray-700 hover:text-gray-600">Kontakt</Link>
+              <Link
+                to="/kontakt"
+                onClick={() => setOpen(false)}
+                className="flex items-center  font-medium text-gray-700 hover:text-gray-600"
+              >
+                Kontakt
+              </Link>
             </div>
-            <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-            <a className="btn-ui btn-second font-medium text-gray-700 hover:text-gray-600" href="tel:48506109445" target="_blank">+48 506 109 445</a>
-                </div>
-            <div
+            <div className=" border-gray-200 py-6 px-4 space-y-6">
+              <a
+                className="btn-ui btn-second font-medium text-gray-700 hover:text-gray-600"
+                href="tel:48506109445"
+                target="_blank"
+              >
+                +48 506 109 445
+              </a>
+            </div>
+            {/* <div
               className={classNames(
                 disabled ? "hidden" : "border-t border-gray-200 py-6 px-4"
               )}
@@ -195,8 +228,7 @@ const MobileMenu = ({ open, setOpen }) => {
                   )
                 })}
               </select>
-            </div>
-            
+            </div> */}
           </div>
         </Transition.Child>
       </Dialog>

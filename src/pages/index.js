@@ -21,11 +21,11 @@ const IndexPage = ({ data }) => {
             src="../images/dog-hero.png"
             alt="A brown dog sitting on the white chair with red cup"
             placeholder="tracedSVG"
-            className="w-full lg:w-1/2 h-auto"
+            className="w-[80%] lg:w-1/2 h-auto"
             objectFit="contain"
           />
           <div>
-          <h1 className="logo-text-ui"> Kleintierpraxis</h1>
+          <h1 className="logo-text-ui">Kleintierpraxis</h1>
             <p className="mt-2 text-lg font-normal">Tierarzt</p>
             <p className="mt-0 text-4xl font-normal">Kalina Adamkiewicz</p>
             <Link
@@ -154,12 +154,13 @@ const IndexPage = ({ data }) => {
           <h2 className="text-3xl">Online Shop</h2>
           {/* <p><b>Medikamente</b> nur für Praxispatienten</p> */}
           <p><b>Haustierprodukte</b></p>
-          <p><b>Zahlung</b> per Karte oder Nachnahme</p>
-          <p><b>Abholung</b> in der Praxis oder Apotheke</p>
+          <p className="uppercase font-semibold text-ui-red"><b>demnächst</b></p>
+          {/* <p><b>Zahlung</b> per Karte oder Nachnahme</p>
+          <p><b>Abholung</b> in der Praxis oder Apotheke</p> */}
         </div>
         </div>
       </div>
-      <div className="layout-base my-12 min-h-0">
+     {/*  <div className="layout-base my-12 min-h-0">
         <Grid
           title={"Producte"}
           cta={{ to: "/products", text: "Alle Produkte" }}
@@ -183,7 +184,7 @@ const IndexPage = ({ data }) => {
             })}
           </Grid>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

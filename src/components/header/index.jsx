@@ -92,7 +92,7 @@ const Header = () => {
         <MobileMenu open={open} setOpen={setOpen} />
         <nav
           aria-label="Top"
-          className="px-4 sm:px-6 lg:px-8 border-b border-ui-medium flex items-center justify-between"
+          className="px-4 sm:px-6 lg:px-8  flex items-center justify-between"
         >
           <div className="flex items-center">
             <div className="h:16 md:h-24 flex items-center">
@@ -120,8 +120,12 @@ const Header = () => {
 
             <div className="hidden lg:flex lg:items-center">
               <div className="hidden flex-grow items-center justify-center lg:flex text-sm font-medium">
-                <HeaderLink to="/products" text="Haustierproducte" />
-                <HeaderLink to="/collections" text="Kategorie" />
+               {/*  <HeaderLink to="/products" text="Haustierproducte" />
+                <HeaderLink to="/collections" text="Kategorie" /> */}
+                <HeaderLink to="/leistungen" text="Leistungen" />
+                <HeaderLink text="Uber Uns"/>
+                <HeaderLink text="Blog"/>
+                
               </div>
             </div>
           </div>
@@ -133,9 +137,9 @@ const Header = () => {
             <div>
             <Link to="/kontakt" className="flex items-center text-sm px-4 py-2 font-medium text-gray-700 hover:text-gray-600">Kontakt</Link>
             </div>
-            <AccountPopover customer={mockData.customer} />
+           {/*  <AccountPopover customer={mockData.customer} /> */}
           </div>
-          <CartPopover cart={mockData.cart} />
+          {/* <CartPopover cart={mockData.cart} /> */}
            {/*  <div className="hidden lg:flex">
               <RegionPopover regions={mockData.regions} />
               <AccountPopover customer={mockData.customer} />

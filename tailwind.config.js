@@ -33,6 +33,7 @@ module.exports = {
           medium: "#D9DFE8",
           dark: "#89959C",
           red: "#F24C3D",
+          black: "#242424"
         },
       },
     },

@@ -32,7 +32,7 @@ p {
 }
 @layer components{
   .btn-second{
-    @apply border-gray-700 text-gray-700 border-2 bg-transparent;
+    @apply border-gray-700 text-gray-700 border bg-transparent max-w-max mx-auto;
   }
 }
 
