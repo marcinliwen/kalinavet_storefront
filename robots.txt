@@ -1,0 +1,3 @@
+User-agent: Googlebot
+
+Sitemap: https://kalinavet.com/sitemap.xml

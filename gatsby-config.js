@@ -7,6 +7,7 @@ module.exports = {
     title: `Kalina-Vet`,
     description: `Kalina-Vet, Kleintierarztpraxis - Zasieki`,
     author: `liwen.marcin@gmail.com`,
+    siteUrl: `https://kalinavet.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
