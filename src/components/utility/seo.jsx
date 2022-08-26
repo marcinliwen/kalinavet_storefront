@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 
 const schema = 
   {
-      "@context": "https://schema.org/VeterinaryCare",
+      "@context": "https://schema.org",
       "@type": "VeterinaryCare",
       "url": "https://kalinavet.com",
       "logo": "https://kalinavet.com/images/logo-g.png",
